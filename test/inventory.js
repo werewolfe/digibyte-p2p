@@ -4,12 +4,12 @@
 
 var should = require('chai').should();
 
-var bitcore = require('digibyte');
+var digibyte = require('digibyte');
 var P2P = require('../');
 var Inventory = P2P.Inventory;
-var BufferUtils = bitcore.util.buffer;
-var BufferWriter = bitcore.encoding.BufferWriter;
-var BufferReader = bitcore.encoding.BufferReader;
+var BufferUtils = digibyte.util.buffer;
+var BufferWriter = digibyte.encoding.BufferWriter;
+var BufferReader = digibyte.encoding.BufferReader;
 
 describe('Inventory', function() {
 

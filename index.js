@@ -1,4 +1,4 @@
-var bitcore = require('digibyte');
-bitcore.P2P = require('./lib');
+var digibyte = require('digibyte');
+digibyte.P2P = require('./lib');
 
-module.exports = bitcore.P2P;
+module.exports = digibyte.P2P;

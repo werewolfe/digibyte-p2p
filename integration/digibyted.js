@@ -6,19 +6,19 @@ var chai = require('chai');
 var should = chai.should();
 var sinon = require('sinon');
 
-var bitcore = require('digibyte');
-var _ = bitcore.deps._;
-var Random = bitcore.crypto.Random;
-var BN = bitcore.crypto.BN;
-var BufferUtil = bitcore.util.buffer;
-var p2p = require('../');
+var digibyte = require('digibyte');
+var _ = digibyte.deps._;
+var Random = digibyte.crypto.Random;
+var BN = digibyte.crypto.BN;
+var BufferUtil = digibyte.util.buffer;
+var p2p = require('..');
 var Peer = p2p.Peer;
 var Pool = p2p.Pool;
-var Networks = bitcore.Networks;
+var Networks = digibyte.Networks;
 var Messages = p2p.Messages;
 var Inventory = p2p.Inventory;
-var Block = bitcore.Block;
-var Transaction = bitcore.Transaction;
+var Block = digibyte.Block;
+var Transaction = digibyte.Transaction;
 
 // config 
 var network = process.env.NETWORK === 'testnet' ? Networks.testnet : Networks.livenet;
@@ -38,8 +38,8 @@ var txHash = {
   'testnet': '22231e8219a0617a0ded618b5dc713fdf9b0db8ebd5bb3322d3011a703119d3b'
 };
 
-// These tests require a running bitcoind instance
-describe('Integration with ' + network.name + ' bitcoind', function() {
+// These tests require a running digibyted instance
+describe('Integration with ' + network.name + ' digibyted', function() {
 
   this.timeout(15000);
   var opts = {

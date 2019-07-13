@@ -4,8 +4,8 @@
 
 var should = require('chai').should();
 var utils = require('../../lib/messages/utils');
-var bitcore = require('digibyte');
-var BufferReader = bitcore.encoding.BufferReader;
+var digibyte = require('digibyte');
+var BufferReader = digibyte.encoding.BufferReader;
 
 describe('Message Utils', function() {
 
