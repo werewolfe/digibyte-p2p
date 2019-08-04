@@ -1,6 +1,6 @@
 {
   "name": "digibyte-p2p",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Interface to the digibyte P2P network for digibyte-js",
   "main": "index.js",
   "scripts": {
