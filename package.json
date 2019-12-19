@@ -20,7 +20,7 @@
     "bcoin": "^1.0.2",
     "bloom-filter": "^0.2.0",
     "buffers": "bitpay/node-buffers#v0.1.2-bitpay",
-    "digibyte": "^0.15.5",
+    "digibyte": "git://github.com/werewolfe/digibyte-lib.git",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {
